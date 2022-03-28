@@ -25,12 +25,12 @@ void print(int n)
     for (i = 1; i <= n; ++i)
     {
         printf("\n\n%d", i);
-        for (j = 1; j <= n; ++j) 
+        for (j = 1; j <= n; ++j)
         {
             if (board[i] == j)
-                printf("\tQ"); 
+                printf("\tQ");
             else
-                printf("\t-"); 
+                printf("\t-");
         }
     }
 }
@@ -45,8 +45,7 @@ int place(int row, int column)
         else if (abs(board[i] - column) == abs(i - row))
             return 0;
     }
-
-    return 1; 
+    return 1;
 }
 
 void queen(int row, int n)
@@ -56,10 +55,10 @@ void queen(int row, int n)
     {
         if (place(row, column))
         {
-            board[row] = column; 
-            if (row == n)        
-                print(n);        
-            else                 
+            board[row] = column;
+            if (row == n)
+                print(n);
+            else
                 queen(row + 1, n);
         }
     }
