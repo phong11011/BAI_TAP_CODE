@@ -1,6 +1,13 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+/**
+ * 3
+ * 1 2 3
+ * 2 - 1 = 1
+ * 3 - 1 = 2
+ * max = 2
+ */
 int main()
 {
 	ios_base::sync_with_stdio(false);
